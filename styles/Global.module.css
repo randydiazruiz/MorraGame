@@ -1,0 +1,212 @@
+:root {
+    --main: rgb(70, 20, 88);
+    --sub: rgb(129, 30, 165);
+    --backgroud: rgb(68, 146, 204);
+    --white: rgb(255, 255, 255);
+    --red: rgb(239, 71, 101);
+    --orange: rgb(255, 154, 90);
+    --black: rgb(0, 0, 0, 0.5);
+    --brownOrange: rgba(239, 71, 101, 0.5);
+    --darkOrange: rgba(255, 154, 90, 0.5);
+
+    --reachBlue: rgba(0, 204, 255);
+    --reachRed: rgb(239, 34, 34);
+    --reachGray: rgb(53, 53, 53);
+    --reachWhite: rgb(209, 209, 209);    
+    --boxShadow: 0 0 10px 0 rgba(0, 204, 255, 0.4);
+    --boxShadowMag: 0 0 10px 0 rgba(255, 0, 238, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:not(body) {
+    transition: all 0.3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Console", "Courier New", monospace !important;
+    color: var(--white);
+    background-color: var(--backgroud);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+    padding: 20px 50px 50px;
+    color: var(--white);
+}
+
+.main {
+    text-align: center;
+    font-size: 50px;
+    color: var(--white);    
+    padding: 40px 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+.subContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: max(70%, 350px);
+    margin: 0;
+    gap: 10px;
+    padding: 20px 20px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.orderContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	gap: 10px;
+	padding: 10px 5px;
+}
+
+.accountConnect {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height : 25px;
+    padding-bottom: 20px;
+    color: var(--white);
+}
+
+.miniHeader {
+    width: 100%;
+    text-align: center;
+    line-height : 25px;
+    color: var(--white);
+}
+  
+.actionButton {
+    background: linear-gradient(to bottom right, var(--red), var(--orange));
+    border: 0;
+    border-radius: 12px;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.actionButton:not([disabled]):focus {
+    box-shadow: 0 0 .25rem var(--black), -.125rem -.125rem 1rem var(--brownOrange), .125rem .125rem 1rem var(--darkOrange);
+}
+  
+.actionButton:not([disabled]):hover {
+    box-shadow: 0 0 .25rem var(--black), -.125rem -.125rem 1rem var(--brownOrange), .125rem .125rem 1rem var(--darkOrange);
+}
+
+.littleText {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height : 25px;
+    padding-bottom: 20px;
+    color: var(--white);
+}
+
+.fields {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    border-bottom: 2px solid var(--reachRed);
+    outline: none;
+}
+
+.fieldsAttacher {
+    margin-bottom: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    border-bottom: 2px solid var(--reachRed);
+    outline: none;
+}
+
+.fingerContainer {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+  
+.finger {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: transparent;
+}
+  
+.finger:hover {
+    box-shadow: var(--boxShadowMag);
+    transform: scale(1.05, 1.05);
+}
+
+/* -----------------Wrapper------------------- */
+.theme {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 5px;
+    color: var(--white);
+}
+
+.subTheme {
+    text-align: center;
+    width: 100%;
+    color: var(--reachGray);
+    line-height : 25px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+/* -----------------Wrapper------------------- */
